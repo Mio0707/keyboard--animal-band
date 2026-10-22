@@ -1,0 +1,728 @@
+{
+  "version": 1,
+  "meaning": "Starting palettes and performance intent, not universal genre definitions or quality certification",
+  "styles": {
+    "bossa-nova": {
+      "route": "吉他主导的小编制Bossa；另一条钢琴Bossa路线需单独选配，不能自动混用",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:40",
+            "sf:128:0"
+          ],
+          "performance": "轻底鼓/侧击/镲或刷奏；弱化响度，支持吉他两层，不复制每次和弦起音",
+          "allowedNotes": [
+            36,
+            37,
+            38,
+            42,
+            44
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:24"
+          ],
+          "performance": "尼龙吉他拇指低音与指拨上声部独立；两小节起音、连断和力度分层；不能只换预设",
+          "suggestedRange": [
+            40,
+            76
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:32",
+            "sf:0:33"
+          ],
+          "performance": "根音/五度支撑，音长为吉他低音让空间；贝斯可省或减，不自动复制所有低音",
+          "suggestedRange": [
+            28,
+            55
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:73",
+            "sf:0:65"
+          ],
+          "performance": "长笛是本路线可选领奏，弱起/提前/跨拍与换气按句改写；人声型原曲仍保留识别句",
+          "suggestedRange": [
+            60,
+            84
+          ]
+        }
+      },
+      "ensemble": "先听吉他+低音+轻打击乐。鼓音量不决定巴西身份。Pandeiro可以选，但需要低/闷/拍/铃片映射，不能普通铃鼓改名。",
+      "sources": [
+        "S3",
+        "S9",
+        "S17"
+      ],
+      "optionalInstruments": [
+        "pandeiro"
+      ]
+    },
+    "jazz-funk": {
+      "route": "直十六分律动的电声小编制；不是全部爵士统一swing",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:0",
+            "sf:128:32"
+          ],
+          "performance": "底鼓/反拍与ghost notes形成重复口袋，装饰避开领奏关键句",
+          "allowedNotes": [
+            36,
+            38,
+            40,
+            42,
+            44,
+            46,
+            49
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:4",
+            "sf:0:16",
+            "sf:0:27"
+          ],
+          "performance": "电钢琴/风琴短句comping，三七音连贯，避开持续覆盖领奏",
+          "suggestedRange": [
+            48,
+            79
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:33",
+            "sf:0:36"
+          ],
+          "performance": "指弹为默认；slap是另一选择，结合休止、短音、重音，不靠预设名生成slap技巧",
+          "suggestedRange": [
+            28,
+            60
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:65",
+            "sf:0:66",
+            "sf:0:73"
+          ],
+          "performance": "萨克斯仅为选择之一，按乐句做呼应、装饰与重音，保留旋律身份",
+          "suggestedRange": [
+            55,
+            84
+          ]
+        }
+      },
+      "ensemble": "主导动机与共同重音清楚，鼓贝可以互补；别让每轨都独立十六分填满。",
+      "sources": [
+        "S3",
+        "S7",
+        "S18"
+      ],
+      "optionalInstruments": []
+    },
+    "swing-jazz": {
+      "route": "中小编制Swing，不覆盖所有爵士",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:32",
+            "sf:128:40",
+            "sf:128:0"
+          ],
+          "performance": "ride与二四拍感，钢琴comp之外保持清楚脉搏；刷奏需检查实际kit映射",
+          "allowedNotes": [
+            36,
+            37,
+            38,
+            42,
+            44,
+            51
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:0",
+            "sf:0:26",
+            "sf:0:11"
+          ],
+          "performance": "钢琴/爵士吉他轻comp，导向音连接，不和低音重复走路",
+          "suggestedRange": [
+            48,
+            79
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:32"
+          ],
+          "performance": "按和声目标连接walking或two-feel；不能每条轨都套固定摆动比例",
+          "suggestedRange": [
+            28,
+            60
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:66",
+            "sf:0:65",
+            "sf:0:56"
+          ],
+          "performance": "完整乐句、重音和长短八分配合领奏，不随机拖拍",
+          "suggestedRange": [
+            55,
+            84
+          ]
+        }
+      },
+      "ensemble": "同一swing网格支持不同分工。先定义two-feel还是walking，声部留交流空隙。",
+      "sources": [
+        "S3",
+        "S4",
+        "S8",
+        "S16"
+      ],
+      "optionalInstruments": []
+    },
+    "blues": {
+      "route": "小编制蓝调；先确认12小节或保留民歌原句长",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:0",
+            "sf:128:32"
+          ],
+          "performance": "直拍或shuffle明确二选一，反拍稳定，转段鼓花不过密",
+          "allowedNotes": [
+            36,
+            38,
+            42,
+            44,
+            46,
+            51
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:0",
+            "sf:0:27",
+            "sf:0:16"
+          ],
+          "performance": "钢琴/清音吉他/风琴的riff与和弦回应，节奏型可重复而非每拍换配置",
+          "suggestedRange": [
+            43,
+            79
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:33",
+            "sf:0:32"
+          ],
+          "performance": "根三五六/八度与turnaround按实际和弦组织，别强塞12小节",
+          "suggestedRange": [
+            28,
+            60
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:22",
+            "sf:0:27",
+            "sf:0:66"
+          ],
+          "performance": "口琴/吉他/萨克斯可选；蓝音必须有句法，通用MIDI不自动具备滑音/推弦",
+          "suggestedRange": [
+            48,
+            84
+          ]
+        }
+      },
+      "ensemble": "领奏和回应分清；先映射曲式，避免旋律14小节对伴奏12小节。",
+      "sources": [
+        "S10",
+        "S18"
+      ],
+      "optionalInstruments": []
+    },
+    "pop-rock": {
+      "route": "流行摇滚基准；失真程度与子风格由参考确定",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:0",
+            "sf:128:16"
+          ],
+          "performance": "清楚backbeat与段落鼓花，Power kit为可选而非总是更重",
+          "allowedNotes": [
+            36,
+            38,
+            42,
+            46,
+            49,
+            51
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:27",
+            "sf:0:25",
+            "sf:0:29"
+          ],
+          "performance": "清音riff/原声扫弦或失真和弦按子风格选；不要同时全铺",
+          "suggestedRange": [
+            40,
+            79
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:34",
+            "sf:0:33"
+          ],
+          "performance": "拨片/指弹与底鼓、吉他riff建立重复关系，句尾少量连接",
+          "suggestedRange": [
+            28,
+            55
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:30",
+            "sf:0:65",
+            "sf:0:0"
+          ],
+          "performance": "旋律前景可吉他/人声另走歌声渲染；失真预设不能代替真实推弦/连奏",
+          "suggestedRange": [
+            52,
+            84
+          ]
+        }
+      },
+      "ensemble": "主歌/高潮通过密度音域动态对比，主旋律与riff轮流前景。",
+      "sources": [
+        "S2",
+        "S7",
+        "S18"
+      ],
+      "optionalInstruments": []
+    },
+    "samba": {
+      "route": "小编制Samba改编候选，不能当完整Batucada",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:0"
+          ],
+          "performance": "按子风格组织低鼓、沙锤和打击层；GM只是近似，未核实surdo/tamborim不冒充",
+          "allowedNotes": [
+            36,
+            42,
+            54,
+            56,
+            60,
+            61,
+            62,
+            63,
+            64,
+            67,
+            68,
+            69,
+            70
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:24",
+            "sf:0:0"
+          ],
+          "performance": "吉他/钢琴保持可重复型，别只把bossa加速",
+          "suggestedRange": [
+            43,
+            79
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:32",
+            "sf:0:33"
+          ],
+          "performance": "按两拍感觉与打击乐主重音配合，连断留呼吸",
+          "suggestedRange": [
+            28,
+            55
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:73",
+            "sf:0:65"
+          ],
+          "performance": "旋律适配细分与句长，前景保持辨认",
+          "suggestedRange": [
+            60,
+            84
+          ]
+        }
+      },
+      "ensemble": "专用巴西乐器需真实映射。音色不足时明示GM近似演示，先听节奏组。",
+      "sources": [
+        "S2",
+        "S9"
+      ],
+      "optionalInstruments": [
+        "pandeiro"
+      ]
+    },
+    "son-salsa": {
+      "route": "古巴Son/Salsa方向：先选clave方向，不能当所有拉丁音乐",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:0"
+          ],
+          "performance": "bongo/conga等按实际音符映射分配；层间互补；鼓组不能替代完整拉丁节奏组",
+          "allowedNotes": [
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            70,
+            75
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:0"
+          ],
+          "performance": "钢琴montuno按clave/和声写循环，段落边界保持方向",
+          "suggestedRange": [
+            48,
+            84
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:32",
+            "sf:0:33"
+          ],
+          "performance": "tumbao需要具体谱例，避免机械复制吉他或每音对底鼓",
+          "suggestedRange": [
+            28,
+            60
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:56",
+            "sf:0:65"
+          ],
+          "performance": "旋律与伴奏问答，铜管是可选色彩，非必需标志",
+          "suggestedRange": [
+            55,
+            84
+          ]
+        }
+      },
+      "ensemble": "缺具体tumbao/montuno示范时补查，不能从salsa标签自动编随机切分。",
+      "sources": [
+        "S9"
+      ],
+      "optionalInstruments": []
+    },
+    "house": {
+      "route": "经典House方向的通用音色起点，不代表全部电子舞曲",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:25",
+            "sf:128:24",
+            "sf:128:0"
+          ],
+          "performance": "先确定鼓机音色和四拍脉搏/镲的关系，不同kit听辨比较",
+          "allowedNotes": [
+            36,
+            38,
+            39,
+            42,
+            46,
+            49
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:0",
+            "sf:0:4",
+            "sf:0:16"
+          ],
+          "performance": "钢琴/电钢琴/风琴stab以循环和进出组织，不一直满编",
+          "suggestedRange": [
+            48,
+            84
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:38",
+            "sf:0:39",
+            "sf:0:33"
+          ],
+          "performance": "选短音或持续低音并给kick起音留空间；侧链不是写坏节奏的修复器",
+          "suggestedRange": [
+            28,
+            55
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:81",
+            "sf:0:80",
+            "sf:0:73"
+          ],
+          "performance": "hook切片/动机可取民歌句，局部滤波和断续服务结构",
+          "suggestedRange": [
+            60,
+            84
+          ]
+        }
+      },
+      "ensemble": "build/drop的能量由编排产生。GM合成预设能做候选，不冒充精细合成器自动化。",
+      "sources": [
+        "S11",
+        "S13",
+        "S14"
+      ],
+      "optionalInstruments": []
+    },
+    "hiphop-lofi": {
+      "route": "采样感Hip-hop/Lo-fi，先确定beat与hook，不靠噪声定义风格",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:0",
+            "sf:128:25"
+          ],
+          "performance": "短kick/snare构成beat，摆动选择有共同网格，不能全轨随机偏移",
+          "allowedNotes": [
+            36,
+            38,
+            39,
+            42,
+            46
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:4",
+            "sf:0:0",
+            "sf:0:11"
+          ],
+          "performance": "Rhodes/钢琴/颤音琴和声可稀疏循环，必要时后处理年代感",
+          "suggestedRange": [
+            48,
+            79
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:33",
+            "sf:0:38"
+          ],
+          "performance": "与beat有意互补，低频持续长度受控",
+          "suggestedRange": [
+            28,
+            55
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:11",
+            "sf:0:73",
+            "sf:0:65"
+          ],
+          "performance": "民歌hook可切片/重新演奏；长句与片段循环边界另核对",
+          "suggestedRange": [
+            55,
+            84
+          ]
+        }
+      },
+      "ensemble": "采样音色没有自动噪声/磁带/唱片层。先确认节奏再加纹理。",
+      "sources": [
+        "S12",
+        "S16"
+      ],
+      "optionalInstruments": []
+    },
+    "orchestral": {
+      "route": "分轨交互的管弦配器候选，不是四轨完整交响乐",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:48",
+            "sf:128:0"
+          ],
+          "performance": "需要时使用管弦打击色彩，乐句推进不一定依赖鼓点",
+          "allowedNotes": [
+            36,
+            38,
+            49,
+            51,
+            60
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:48",
+            "sf:0:49"
+          ],
+          "performance": "快/慢弦乐按起音选择，特殊奏法需要独立bank或专用源，不伪称keyswitch",
+          "suggestedRange": [
+            48,
+            84
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:43",
+            "sf:0:42"
+          ],
+          "performance": "低弦按动态/弓法与和声连接，避免所有声部堆低根音",
+          "suggestedRange": [
+            28,
+            60
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:0:40",
+            "sf:0:73",
+            "sf:0:56"
+          ],
+          "performance": "弦/木管/铜管依情绪与音域择一；保持配器与旋律呼吸",
+          "suggestedRange": [
+            55,
+            88
+          ]
+        }
+      },
+      "ensemble": "角色轨数是交互约束，不是管弦编制事实。复杂奏法不足须明确限制。",
+      "sources": [
+        "S6"
+      ],
+      "optionalInstruments": []
+    },
+    "drift-phonk": {
+      "route": "Drift Phonk：核实的808牛铃采样移调、鼓机与处理后的合成低音；非经典Phonk通用模板",
+      "tracks": {
+        "dog": {
+          "role": "rhythm",
+          "candidates": [
+            "sf:128:25"
+          ],
+          "performance": "破拍底鼓、反拍军鼓/拍手、轻十六分镲；不必四拍底鼓",
+          "allowedNotes": [
+            36,
+            38,
+            39,
+            42,
+            46
+          ]
+        },
+        "bear": {
+          "role": "harmony",
+          "candidates": [
+            "sf:0:89"
+          ],
+          "performance": "稀疏暗色Warm Pad，给牛铃瞬态留空间",
+          "suggestedRange": [
+            48,
+            67
+          ]
+        },
+        "cat": {
+          "role": "bass",
+          "candidates": [
+            "sf:0:38"
+          ],
+          "performance": "Synth Bass 1，短/长音交替并做局部饱和与kick duck；不冒称已实现808滑音",
+          "suggestedRange": [
+            24,
+            48
+          ]
+        },
+        "lion": {
+          "role": "lead",
+          "candidates": [
+            "sf:128:25"
+          ],
+          "performance": "从真实808 Cowbell note56渲染单音并移调；谱面音高不能直接作为鼓键",
+          "allowedNotes": [
+            56
+          ],
+          "renderEngine": "pitched-drum-sample",
+          "sourceNote": 56,
+          "scoreChannel": 0,
+          "suggestedRange": [
+            60,
+            84
+          ]
+        }
+      },
+      "ensemble": "保持统一hook与低频空间。新渲染器须支持pitched-drum-sample；不支持时明确报错，不退回普通钢琴或打击键。",
+      "sources": [
+        "S24"
+      ],
+      "optionalInstruments": []
+    }
+  }
+}

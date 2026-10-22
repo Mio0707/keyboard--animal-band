@@ -1,0 +1,56 @@
+{
+  "id": "independent-waltz",
+  "title": "Independent three-beat test",
+  "bpm": 87.5,
+  "beatsPerBar": 3,
+  "beats": 9,
+  "source": {
+    "file": "original-test-melody"
+  },
+  "melody": [
+    {
+      "midi": 62,
+      "beat": 0,
+      "duration": 1
+    },
+    {
+      "midi": 65,
+      "beat": 1,
+      "duration": 2
+    },
+    {
+      "midi": 69,
+      "beat": 3,
+      "duration": 1.5
+    },
+    {
+      "midi": 65,
+      "beat": 4.5,
+      "duration": 1.5
+    },
+    {
+      "midi": 62,
+      "beat": 6,
+      "duration": 3
+    }
+  ],
+  "chords": [
+    {
+      "name": "Dm7",
+      "beat": 0,
+      "duration": 9,
+      "root": 38,
+      "voicing": [
+        53,
+        57,
+        60,
+        65
+      ]
+    }
+  ],
+  "phraseEnds": [
+    3,
+    6,
+    9
+  ]
+}

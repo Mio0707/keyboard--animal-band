@@ -1,0 +1,4 @@
+interface:
+  display_name: "音乐编曲与互动配乐"
+  short_description: "输入歌曲与目标风格，完成改编、合奏验证并输出支持八键和旋钮的演奏网页"
+  default_prompt: "使用 $rhythm-game-music，将我指定的歌曲改编成目标风格，核对曲谱和音色，完成编曲与检查，输出并启动能用实体八键和旋钮操作的演奏网页。"
